@@ -1,0 +1,64 @@
+<html>
+	<head>
+	<title> Result </title>
+	
+	
+	
+	<script>
+		
+			function calculate(){
+			var eng = document.getElementById("e").value;
+			var mar = document.getElementById("m").value;
+			var hin = document.getElementById("h").value;
+			var mat = document.getElementById("mt").value;
+			var sci = document.getElementById("s").value;
+			
+			var eng1=parseInt(eng);
+			var mar1=parseInt(mar);
+			var hin1=parseInt(hin);
+			var mat1=parseInt(mat);
+			var sci1=parseInt(sci);
+			
+			var Total = eng1+mar1+hin1+mat1+sci1;
+			
+			var per=Total/5;
+			
+			if (eng=="") {
+			alert("Enter English marks");
+			}
+			else if (mar=="") {
+			alert("Enter Marathi marks");
+			}
+			else if (hin=="") {
+			alert("Enter Hindi marks");
+			}
+			else if (mat=="") {
+			alert("Enter Maths marks");
+			}
+			else if (sci=="") {
+			alert("Enter Science marks");
+			}
+			else {
+			alert("Total is"+Total+"\nPercentage :"+per);
+			}	
+		}
+	</script>
+	
+	
+	
+	</head>
+	
+	<body>
+	
+		Enter English marks:<input type="number" id="e">
+		<br>Enter Marathi marks:<input type="number" id="m">
+		<br>Enter Hindi marks:<input type="number" id="h">
+		<br>Enter Maths marks:<input type="number" id="mt">
+		<br>Enter Science marks:<input type="number" id="s">
+		<br><input type="submit" value="submit" onclick="calculate()">
+		
+		
+		
+	</body>	
+	
+</html>
